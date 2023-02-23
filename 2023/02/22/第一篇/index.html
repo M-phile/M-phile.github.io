@@ -1,400 +1,588 @@
-
-
 <!DOCTYPE html>
 <html lang="zh-CN" data-default-color-scheme=auto>
 
 
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="John Doe">
-  <meta name="keywords" content="">
-  
+  <head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+    <link rel="icon" href="/img/fluid.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="theme-color" content="#2f4154">
+    <meta name="author" content="John Doe">
+    <meta name="keywords" content="">
+
     <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇">
-<meta property="og:url" content="http://example.com/2023/02/22/%E7%AC%AC%E4%B8%80%E7%AF%87/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-02-22T10:40:48.000Z">
-<meta property="article:modified_time" content="2023-02-22T10:40:48.346Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-  
-  <title>第一篇 - Hexo</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+    <meta property="og:title" content="第一篇">
+    <meta property="og:url" content="http://example.com/2023/02/22/%E7%AC%AC%E4%B8%80%E7%AF%87/index.html">
+    <meta property="og:site_name" content="Hexo">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:published_time" content="2023-02-22T10:40:48.000Z">
+    <meta property="article:modified_time" content="2023-02-22T10:40:48.346Z">
+    <meta property="article:author" content="John Doe">
+    <meta name="twitter:card" content="summary_large_image">
 
 
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+    <title>第一篇 - Hexo</title>
 
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
 
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
+    <link rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+    <link rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+    <link rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+
+    <!-- 主题依赖的图标库，不要自行修改 -->
+    <!-- Do not modify the link that theme dependent icons -->
+
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
+
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+    <link rel="stylesheet" href="/css/main.css" />
+
+
+    <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+
     <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
 
 
 
 
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
+    <script id="fluid-configs">
+      var Fluid = window.Fluid || {};
+      Fluid.ctx = Object.assign({}, Fluid.ctx)
+      var CONFIG = { "hostname": "example.com", "root": "/", "version": "1.9.4", "typing": { "enable": true, "typeSpeed": 70, "cursorChar": "_", "loop": false, "scope": [] }, "anchorjs": { "enable": true, "element": "h1,h2,h3,h4,h5,h6", "placement": "left", "visible": "hover", "icon": "" }, "progressbar": { "enable": true, "height_px": 3, "color": "#29d", "options": { "showSpinner": false, "trickleSpeed": 100 } }, "code_language": { "enable": true, "default": "TEXT" }, "copy_btn": true, "image_caption": { "enable": true }, "image_zoom": { "enable": true, "img_url_replace": ["", ""] }, "toc": { "enable": true, "placement": "right", "headingSelector": "h1,h2,h3,h4,h5,h6", "collapseDepth": 0 }, "lazyload": { "enable": true, "loading_img": "/img/loading.gif", "onlypost": false, "offset_factor": 2 }, "web_analytics": { "enable": false, "follow_dnt": true, "baidu": null, "google": null, "gtag": null, "tencent": { "sid": null, "cid": null }, "woyaola": null, "cnzz": null, "leancloud": { "app_id": null, "app_key": null, "server_url": null, "path": "window.location.pathname", "ignore_local": false } }, "search_path": "/local-search.xml" };
 
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
+      if (CONFIG.web_analytics.follow_dnt) {
+        var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+        Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+      }
+    </script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/color-schema.js"></script>
 
 
-<body>
-  
+    <style>
+      h2 {
+        text-align: center;
+      }
+    </style>
 
-  <header>
-    
+    <meta name="generator" content="Hexo 6.3.0">
+  </head>
 
-<div class="header-inner" style="height: 70vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
-    </a>
 
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
+  <body>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
+
+    <header>
+
+
+      <div class="header-inner" style="height: 70vh;">
+        <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+          <div class="container">
+            <a class="navbar-brand" href="/">
+              <strong>Fluid</strong>
             </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
 
-  
+            <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <div class="animated-icon"><span></span><span></span><span></span></div>
+            </button>
 
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="第一篇"></span>
-          
-        </div>
-
-        
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-02-22 18:40" pubdate>
-          2023年2月22日 晚上
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          0 字
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          1 分钟
-        
-      </span>
-    
-
-    
-    
-  </div>
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-center">
 
 
-        
-      </div>
-
-      
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">第一篇</h1>
-            
-            
-              <div class="markdown-body">
-                
-                
-                
-              </div>
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
-  
-  
-</div>
 
 
-              
-  
 
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>第一篇</div>
-      <div>http://example.com/2023/02/22/第一篇/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>John Doe</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2023年2月22日</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
+                <li class="nav-item">
+                  <a class="nav-link" href="/">
+                    <i class="iconfont icon-home-fill"></i>
+                    <span>首页</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/archives/">
+                    <i class="iconfont icon-archive-fill"></i>
+                    <span>归档</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/categories/">
+                    <i class="iconfont icon-category-fill"></i>
+                    <span>分类</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/tags/">
+                    <i class="iconfont icon-tags-fill"></i>
+                    <span>标签</span>
+                  </a>
+                </li>
+
+
+
+
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/about/">
+                    <i class="iconfont icon-user-fill"></i>
+                    <span>关于</span>
+                  </a>
+                </li>
+
+
+
+                <li class="nav-item" id="search-btn">
+                  <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch"
+                    aria-label="Search">
+                    <i class="iconfont icon-search"></i>
+                  </a>
+                </li>
+
+
+
+                <li class="nav-item" id="color-toggle-btn">
+                  <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+                    <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+        <div id="banner" class="banner" parallax=true
+          style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+          <div class="full-bg-img">
+            <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+              <div class="banner-text text-center fade-in-up">
+                <div class="h2">
+
+                  <span id="subtitle" data-typed-text="作品"></span>
+
+                </div>
+
+
+
+                <div class="mt-3">
+
+
+                  <span class="post-meta">
+                    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                    <time datetime="2023-02-22 18:40" pubdate>
+                      2023年2月22日 晚上
+                    </time>
                   </span>
-                </a>
-              
-            
+
+                </div>
+
+                <div class="mt-1">
+
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+
+                    0 字
+
+                  </span>
+
+
+
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-clock-fill"></i>
+
+
+
+                    1 分钟
+
+                  </span>
+
+
+
+
+                </div>
+
+
+
+              </div>
+
+
+            </div>
           </div>
         </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
+
+      </div>
+
+    </header>
+
+    <main>
 
 
 
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2023/02/22/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
+      <div class="container-fluid nopadding-x">
+        <div class="row nomargin-x">
+          <div class="side-col d-none d-lg-block col-lg-2">
+
+
+          </div>
+
+          <div class="col-lg-8 nopadding-x-md">
+            <div class="container nopadding-x-md" id="board-ctn">
+              <div id="board">
+                <article class="post-content mx-auto">
+                  <!-- SEO header -->
+                  <h1 style="display: none">第一篇</h1>
+
+
+                  <div class="markdown-body">
+
+                    <div>
+                      <h1>贾林慧的作品</h1>
+                      <!-- 创客贴 -->
+                      <div>
+                        <h2>chuangkit移动端仿写</h2>
+                        项目链接：<a href="http://8.130.68.253/">http://8.130.68.253/</a>
+                        <br>
+                        项目环境：Vue / elementUI / axios / Vuex / Vue-router
+                        <br>
+                        开发技术：
+                        <br>
+                        1.使用图片有资源懒加载技术，将页面未出现在可视区域内的图片先不做加载，等到滚动到可 视区域后再去加载。从而很大得提升了页面加载性能，也提高了用户体验。<br>
+                        2.搜索功能，通过封装防抖函数，减少向服务端发请求得次数，从而缓解服务器和网络的压力，是 页面加载更流畅。<br>
+                        3.通过sessionStorage保存导航栏状态，从而实现在页面刷新时导航栏样式定位。<br>
+                        4.使用vuex对控制导航栏样式的数据进行管理，从而实现导航栏样式随页面的改变而改变。<br>
+                        <video width="50%" controls>
+                          <source src="./firstimg/kit~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- node购物商城及登录 -->
+                      <div>
+                        <h2>基于nodejs+vue-cli+mysql的购物商城</h2>
+                        项目环境：Vue / vant / elementUI / Vuex / Vue-router / mysql / nodejs
+                        <br>
+                        开发技术：
+                        <br>
+                        1.使用图片有资源懒加载技术，将页面未出现在可视区域内的图片先不做加载，等到滚动到可 视区域后再去加载。从而很大得提升了页面加载性能，也提高了用户体验。<br>
+                        2.编写node服务器，用node连接本地数据库<br>
+                        3.使用vuex对登陆状态进行管理，从而实现不用每次进入网站都需要输入账号密码就可以实现登录。<br>
+                        4.搜索功能，通过封装防抖函数，减少向服务端发请求得次数，从而缓解服务器和网络的压力，是 页面加载更流畅。<br>
+                        <video width="100%" controls>
+                          <source src="./firstimg/node~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- vuex购物车及结算 -->
+                      <div>
+                        <h2>基于vuex的购物车</h2>
+                        项目环境：Vue / vant / Vuex / Vue-router
+                        <br>
+                        开发技术：
+                        <br>
+                        Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式 + 库。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。<br>
+                        <video width="100%" controls>
+                          <source src="./firstimg/shopcar~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- todolist -->
+                      <div>
+                        <h2>element + vuex -> todolist</h2>
+                        项目环境：Vue / elementUI / Vuex
+                        <br>
+                        开发技术：
+                        <br>
+                        1.鼠标移动到对应列显示删除按钮，移开隐藏按钮<br>
+                        2.全选和反选<br>
+                        <video width="100%" controls>
+                          <source src="./firstimg/todo~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- canvas动画画布 -->
+                      <div>
+                        <h2>canvas动画画布</h2>
+                        项目环境：html
+                        <br>
+                        开发技术：html
+                        <br>
+
+                        <video width="100%" controls>
+                          <source src="./firstimg/canvas动画~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- 大屏可视化 -->
+                      <div>
+                        <h2>echarts + vue -> 大屏可视化</h2>
+                        项目环境：Vue / echarts
+                        <br>
+                        开发技术：
+                        <br>
+                        1.鼠标移动到对应列显示删除按钮，移开隐藏按钮<br>
+                        2.全选和反选<br>
+                        <video width="100%" controls>
+                          <source src="./firstimg/echarts~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- 原生js实现网易云 -->
+                      <div>
+                        <h2>原生js仿写网易云仿写</h2>
+                        项目环境：JS
+                        <br>
+                        开发技术：JS
+                        <br>
+
+                        <video width="100%" controls>
+                          <source src="./firstimg/网易云~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- 原生js实现四级联动 -->
+                      <div>
+                        <h2>原生js实现四级联动</h2>
+                        项目环境：JS
+                        <br>
+                        开发技术：JS
+                        <br>
+
+                        <video width="100%" controls>
+                          <source src="./firstimg/四级联动~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- 原生js实现拖拽事件 -->
+                      <div>
+                        <h2>原生js实现拖拽事件</h2>
+                        项目环境：JS
+                        <br>
+                        开发技术：JS
+                        <br>
+
+                        <video width="100%" controls>
+                          <source src="./firstimg/拖拽事件~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- 原生html实现tubatu -->
+                      <div>
+                        <h2>原生html仿写tubatu</h2>
+                        项目环境：html
+                        <br>
+                        开发技术：html
+                        <br>
+
+                        <video width="100%" controls>
+                          <source src="./firstimg/tubatu~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- 原生html实现立方体 -->
+                      <div>
+                        <h2>原生html实现立方体</h2>
+                        项目环境：html
+                        <br>
+                        开发技术：html
+                        <br>
+
+                        <video width="100%" controls>
+                          <source src="./firstimg/立方体~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- 阿里秀-bootstrap -->
+                      <div>
+                        <h2>阿里秀-bootstrap</h2>
+                        项目环境：html
+                        <br>
+                        开发技术：html / Bootstrap
+                        <br>
+
+                        <video width="100%" controls>
+                          <source src="./firstimg/阿里秀~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- 苏宁 rem + 媒体查询 -->
+                      <div>
+                        <h2>移动端 rem + 媒体查询</h2>
+                        项目环境：html
+                        <br>
+                        开发技术：html
+                        <br>
+
+                        <video width="100%" controls>
+                          <source src="./firstimg/苏宁~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- 京东-流式布局 百分比 -->
+                      <div>
+                        <h2>移动端 流式布局 + 百分比</h2>
+                        项目环境：html
+                        <br>
+                        开发技术：html
+                        <br>
+
+                        <video width="100%" controls>
+                          <source src="./firstimg/京东~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                      <!-- 携程-flex -->
+                      <div>
+                        <h2>移动端 flex布局 </h2>
+                        项目环境：html
+                        <br>
+                        开发技术：html
+                        <br>
+                        <video width="100%" controls>
+                          <source src="./firstimg/携程~1.mp4" type="video/mp4">
+                        </video>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+                  <hr />
+                  <!-- 尾部 -->
+                  <div>
+                    <div class="post-metas my-3">
+
+
+                    </div>
+
+
+
+
+
+                    <div class="license-box my-3">
+                      <div class="license-title">
+                        <div>贾林慧的项目</div>
+                        <div>http://example.com/2023/02/22/第一篇/</div>
+                      </div>
+                      <div class="license-meta">
+
+                        <div class="license-meta-item">
+                          <div>作者</div>
+                          <div>John Doe</div>
+                        </div>
+
+
+                        <div class="license-meta-item license-meta-date">
+                          <div>发布于</div>
+                          <div>2023年2月22日</div>
+                        </div>
+
+
+
+                        <div class="license-meta-item">
+                          <div>许可协议</div>
+                          <div>
+
+
+
+                            <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                                <i class="iconfont icon-by"></i>
+                              </span>
+                            </a>
+
+
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="license-icon iconfont"></div>
+                    </div>
+
+
+
+
+                    <div class="post-prevnext my-3">
+                      <article class="post-prev col-6">
+
+
+                      </article>
+                      <article class="post-next col-6">
+
+
+                        <a href="/2023/02/22/hello-world/" title="Hello World">
+                          <span class="hidden-mobile">Hello World</span>
+                          <span class="visible-mobile">下一篇</span>
+                          <i class="iconfont icon-arrowright"></i>
+                        </a>
+
+                      </article>
+                    </div>
+
+                  </div>
+
+
+                </article>
+              </div>
             </div>
+          </div>
 
-            
-          </article>
+          <div class="side-col d-none d-lg-block col-lg-2">
+
+            <aside class="sidebar" style="margin-left: -1rem">
+              <div id="toc">
+                <p class="toc-header">
+                  <i class="iconfont icon-list"></i>
+                  <span>目录</span>
+                </p>
+                <div class="toc-body" id="toc-body"></div>
+              </div>
+
+            </aside>
+
+
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
 
 
 
@@ -402,208 +590,233 @@
 
 
 
-    
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
         <i class="iconfont icon-arrowup" aria-hidden="true"></i>
       </a>
-    
 
-    
+
+
       <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+              <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <input type="text" id="local-search-input" class="form-control validate">
+                <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+              </div>
+              <div class="list-group" id="local-search-result"></div>
+            </div>
+          </div>
         </div>
-        <div class="list-group" id="local-search-result"></div>
       </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-    </div>
-  
-  
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
 
 
 
 
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+
+        <div class="footer-content">
+          <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i
+            class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank"
+            rel="nofollow noopener"><span>Fluid</span></a>
+        </div>
 
 
 
 
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
+      </div>
 
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
+    </footer>
 
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
+    <!-- Scripts -->
+
+    <script src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js"></script>
+    <link rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+    <script>
+      NProgress.configure({ "showSpinner": false, "trickleSpeed": 100 })
+      NProgress.start()
+      window.addEventListener('load', function () {
+        NProgress.done();
+      })
+    </script>
+
+
+    <script src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js"></script>
+    <script src="/js/events.js"></script>
+    <script src="/js/plugins.js"></script>
+
+
+    <script src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        (function (window, document) {
+          var typing = Fluid.plugins.typing;
+          var subtitle = document.getElementById('subtitle');
+          if (!subtitle || !typing) {
+            return;
+          }
+          var text = subtitle.getAttribute('data-typed-text');
+
+          typing(text);
+
+        })(window, document);
+    </script>
+
+
+
+
+
+    <script src="/js/img-lazyload.js"></script>
+
+
+
+
+
+
+    <script>
+      Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function () {
         var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
+        if (toc.length === 0 || !window.tocbot) { return; }
+        var boardCtn = jQuery('#board-ctn');
+        var boardTop = boardCtn.offset().top;
+
+        window.tocbot.init(Object.assign({
+          tocSelector: '#toc-body',
+          contentSelector: '.markdown-body',
+          linkClass: 'tocbot-link',
+          activeLinkClass: 'tocbot-active-link',
+          listClass: 'tocbot-list',
+          isCollapsedClass: 'tocbot-is-collapsed',
+          collapsibleClass: 'tocbot-is-collapsible',
+          scrollSmooth: true,
+          includeTitleTags: true,
+          headingsOffset: -boardTop,
+        }, CONFIG.toc));
         if (toc.find('.toc-list-item').length > 0) {
           toc.css('visibility', 'visible');
         }
-      }
-    });
-  });
-</script>
+
+        Fluid.events.registerRefreshCallback(function () {
+          if ('tocbot' in window) {
+            tocbot.refresh();
+            var toc = jQuery('#toc');
+            if (toc.length === 0 || !tocbot) {
+              return;
+            }
+            if (toc.find('.toc-list-item').length > 0) {
+              toc.css('visibility', 'visible');
+            }
+          }
+        });
+      });
+    </script>
 
 
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+    <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
 
-  <script>Fluid.plugins.codeWidget();</script>
+    <script>Fluid.plugins.codeWidget();</script>
 
 
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
 
-    Fluid.events.registerRefreshCallback(function() {
-      if ('anchors' in window) {
-        anchors.removeAll();
+    <script>
+      Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function () {
+        window.anchors.options = {
+          placement: CONFIG.anchorjs.placement,
+          visible: CONFIG.anchorjs.visible
+        };
+        if (CONFIG.anchorjs.icon) {
+          window.anchors.options.icon = CONFIG.anchorjs.icon;
+        }
         var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
         var res = [];
         for (var item of el) {
           res.push('.markdown-body > ' + item.trim());
         }
         if (CONFIG.anchorjs.placement === 'left') {
-          anchors.options.class = 'anchorjs-link-left';
+          window.anchors.options.class = 'anchorjs-link-left';
         }
-        anchors.add(res.join(', '));
-      }
-    });
-  });
-</script>
+        window.anchors.add(res.join(', '));
 
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  <script  src="/js/local-search.js" ></script>
-
-
+        Fluid.events.registerRefreshCallback(function () {
+          if ('anchors' in window) {
+            anchors.removeAll();
+            var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+            var res = [];
+            for (var item of el) {
+              res.push('.markdown-body > ' + item.trim());
+            }
+            if (CONFIG.anchorjs.placement === 'left') {
+              anchors.options.class = 'anchorjs-link-left';
+            }
+            anchors.add(res.join(', '));
+          }
+        });
+      });
+    </script>
 
 
 
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+    <script>
+      Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function () {
+        Fluid.plugins.fancyBox();
+      });
+    </script>
 
 
-  
+    <script>Fluid.plugins.imageCaption();</script>
 
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
-</body>
+    <script src="/js/local-search.js"></script>
+
+
+
+
+
+    <!-- 主题的启动项，将它保持在最底部 -->
+    <!-- the boot of the theme, keep it at the bottom -->
+    <script src="/js/boot.js"></script>
+
+
+
+
+    <noscript>
+      <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+    </noscript>
+  </body>
+
 </html>
